@@ -1,10 +1,13 @@
 package com.ieya.lib_in_a_bottle.items;
 
 import com.ieya.lib_in_a_bottle.blocks.ModBlocks;
-import com.ieya.lib_in_a_bottle.LibInABottle;
+import net.minecraft.world.item.BlockItem;
+import net.neoforged.neoforge.registries.DeferredItem;
+
+import static com.ieya.lib_in_a_bottle.LibInABottle.ITEMS;
 
 public class ModItems {
-    public static final init() {}
+    public static void init() {}
 
-    public static final DeferredItem<BlockItem> LIB_BOTTLE_ITEM = ITEMS.registerSimpleBlockItem("example_block", ModBlocks.LIB_BOTTLE);
+    public static final DeferredItem<BlockItem> LIB_BOTTLE_ITEM = ITEMS.registerSimpleBlockItem("library_in_a_bottle", ModBlocks.LIB_BOTTLE);
 }
