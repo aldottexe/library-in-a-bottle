@@ -1,12 +1,10 @@
 package com.ieya.lib_in_a_bottle.mobEffects;
 
-import com.ieya.lib_in_a_bottle.LibInABottle;
-import net.minecraft.core.Holder;
 import net.minecraft.world.effect.MobEffect;
 import net.minecraft.world.effect.MobEffectCategory;
 import net.neoforged.neoforge.registries.DeferredHolder;
 
-import static com.ieya.lib_in_a_bottle.LibInABottle.MOB_EFFECTS;
+import static com.ieya.lib_in_a_bottle.LibInABottleServer.MOB_EFFECTS;
 
 public class ModMobEffects {
     public static void init() {}

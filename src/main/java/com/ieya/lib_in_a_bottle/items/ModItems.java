@@ -4,7 +4,7 @@ import com.ieya.lib_in_a_bottle.blocks.ModBlocks;
 import net.minecraft.world.item.BlockItem;
 import net.neoforged.neoforge.registries.DeferredItem;
 
-import static com.ieya.lib_in_a_bottle.LibInABottle.ITEMS;
+import static com.ieya.lib_in_a_bottle.LibInABottleServer.ITEMS;
 
 public class ModItems {
     public static void init() {}

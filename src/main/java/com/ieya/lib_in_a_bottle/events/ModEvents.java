@@ -1,13 +1,9 @@
 package com.ieya.lib_in_a_bottle.events;
 
-import com.ieya.lib_in_a_bottle.LibInABottle;
-import com.ieya.lib_in_a_bottle.mobEffects.EnchantersAffinity;
 import com.ieya.lib_in_a_bottle.mobEffects.ModMobEffects;
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Blocks;
-import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.neoforge.event.enchanting.EnchantmentLevelSetEvent;
 import net.neoforged.neoforge.event.entity.player.PlayerInteractEvent;
 
@@ -16,7 +12,6 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class ModEvents {
-
 
     // Events for the Enchanter's Affinity Enchant
     private static final Map<BlockPos, WeakReference<Player>> TABLE_USERS = new HashMap<>();
@@ -34,6 +29,6 @@ public class ModEvents {
         if (player == null || !player.hasEffect(ModMobEffects.enchantersAffinity)) return;
 
         int amplifier = player.getEffect(ModMobEffects.enchantersAffinity).getAmplifier();
-        event.setEnchantLevel(Math.min(event.getEnchantLevel() + (amplifier + 1) * 10, 30));
+        event.setEnchantLevel(Math.min(event.getEnchantLevel() + (amplifier + 1) * 15, 30));
     }
 }
